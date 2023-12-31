@@ -88,6 +88,7 @@ section {
   padding: 10px 20px;
   color: white;
   background: linear-gradient(236.72deg, #326cff 0%, #59ffb9 50%, #326cff 100%);
+  /* background: linear-gradient(257.55deg, #59ffb9 0%, #326cff 100%); */
   background-size: 350%;
   border-radius: 100px;
   transition: 0.3s ease-out;
@@ -95,6 +96,7 @@ section {
 
 .nav-link-active:hover {
   background-position: right center;
+  /* transform: rotateZ(180deg); */
 }
 
 .home-group {
@@ -201,6 +203,41 @@ section {
   font-weight: 900;
   line-height: 44px;
   text-shadow: 0px 4px 4px #00000040;
+}
+
+/* === sponsor section === */
+.sponsor-section {
+  background: linear-gradient(249.39deg, #59ffb9 -31.85%, #326cff 101.31%);
+  gap: 30px;
+}
+
+.sponsor-section h1 {
+  color: white;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 44px;
+}
+
+.slider {
+  gap: 20px;
+}
+
+.slide-track {
+  gap: 20px;
+  animation: slide 10s linear infinite;
+}
+
+.slider:hover .slide-track {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 /* mobile device */
