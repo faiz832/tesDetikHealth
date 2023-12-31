@@ -87,10 +87,10 @@ section {
   display: inline-block;
   padding: 10px 20px;
   color: white;
-  background: linear-gradient(257.55deg, #326cff 0%, #59ffb9 50%, #326cff 100%);
-  background-size: 200% auto;
+  background: linear-gradient(236.72deg, #326cff 0%, #59ffb9 50%, #326cff 100%);
+  background-size: 350%;
   border-radius: 100px;
-  transition: 0.1s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .nav-link-active:hover {
@@ -121,11 +121,45 @@ section {
 }
 
 .about-card {
-  background: linear-gradient(236.72deg, #59ffb9 -30.09%, #326cff 71.21%);
   padding: 32px;
   border-radius: 32px;
   gap: 30px;
-  transition: 0.1s ease-out;
+}
+
+.about-card,
+.frame1,
+.frame2,
+.frame3 {
+  background: linear-gradient(236.72deg, #326cff 0%, #59feb9 50%, #326cff 100%);
+  background-size: 350%;
+  transition: 0.3s ease-out;
+}
+
+.about-card:hover,
+.frame1:hover,
+.frame2:hover,
+.frame3:hover {
+  background-position: right;
+}
+
+.card-img,
+.frame3-img {
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.card-img img,
+.frame3-img img {
+  transition: 0.3s ease-out;
+}
+
+.about-card:hover .card-img img,
+.frame3:hover .frame3-img img {
+  transform: scale(1.1);
+}
+
+.frame3-title {
+  width: 310px;
 }
 
 .card-title {
@@ -156,7 +190,6 @@ section {
   padding: 32px;
   border-radius: 32px;
   gap: 30px;
-  background: linear-gradient(236.72deg, #59ffb9 -30.09%, #326cff 71.21%);
 }
 
 .frame1 h1,
@@ -277,6 +310,9 @@ section {
   }
   .frame3-img img {
     width: 330px;
+  }
+  .frame3-title {
+    width: 100%;
   }
   .card-title h1,
   .frame1 h1,
