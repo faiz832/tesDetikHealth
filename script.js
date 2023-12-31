@@ -4,8 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navItemGroup = document.querySelector(".nav-item-group");
 
   navIcon.addEventListener("click", function () {
-    // Toggle class 'active' to switch between display: none and display: block
-    navItemGroup.classList.toggle("active");
+    navItemGroup.classList.toggle("active"); // add active
   });
 });
 
@@ -34,6 +33,36 @@ function showImg(e) {
   for (i = 0; i < sliders.length; i++) {
     sliders[i].style.filter = "grayscale(100%)";
   }
-  img[indexValue - 1].style.display = "block";
-  sliders[indexValue - 1].style.filter = "grayscale(0%)";
+  img[indexValue - 1].style.display = "block"; // display
+  sliders[indexValue - 1].style.filter = "grayscale(0%)"; // hilangkan grayscale
 }
+
+// === berita filter ===
+$(document).ready(function () {
+  $(".berita-box").hide(); // hide semua berita-box
+  $(".berita-box.artikel").show(); // show berita-box artikel
+});
+$(document).ready(function () {
+  $(".filter-item").click(function () {
+    const value = $(this).attr("data-filter");
+    if (value == "artikel") {
+      $(".berita-box")
+        .not("." + value)
+        .hide("1000");
+      $(".berita-box")
+        .filter("." + value)
+        .show("1000");
+    } else {
+      $(".berita-box")
+        .not("." + value)
+        .hide("1000");
+      $(".berita-box")
+        .filter("." + value)
+        .show("1000");
+    }
+  });
+  //active btn
+  $(".filter-item").click(function () {
+    $(this).addClass("active-filter").siblings().removeClass("active-filter");
+  });
+});
