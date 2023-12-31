@@ -19,6 +19,7 @@ a {
 
 section {
   padding: 5rem 0;
+  margin: 5rem 0;
 }
 
 .button a {
@@ -45,6 +46,10 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 0;
+}
+
+.nav-menu {
+  width: 1194px;
 }
 
 .nav-menu {
@@ -100,6 +105,7 @@ section {
 }
 
 .home-group {
+  width: 1194px;
   height: 960px;
 }
 
@@ -240,6 +246,37 @@ section {
   }
 }
 
+/* === galeri section === */
+.galeri h1 {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 44px;
+  margin-bottom: 30px;
+}
+
+.galeri-content {
+  width: 1058px;
+  gap: 20px;
+}
+
+.content-img-nav img {
+  width: 254px;
+  cursor: pointer;
+  /* filter: grayscale(100%); */
+}
+
+.content-btn {
+  position: absolute;
+  width: 954px;
+  margin-top: 302px;
+  margin-left: 51px;
+}
+
+.content-btn .prev-btn,
+.content-btn .next-btn {
+  cursor: pointer;
+}
+
 /* mobile device */
 @media (max-width: 426px) {
   .home {
@@ -285,6 +322,7 @@ section {
   .home-group {
     justify-content: start !important;
     padding-top: 12rem;
+    width: 367px;
     height: 231px;
   }
   .button a {
@@ -332,6 +370,7 @@ section {
     width: 394px;
     gap: 27px;
   }
+  .nav-menu,
   .about-card,
   .about-frame {
     width: 394px;
@@ -368,5 +407,27 @@ section {
   .frame3 p {
     font-size: 16px;
     line-height: 20px;
+  }
+  .galeri h1 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .galeri-content {
+    width: 376px;
+  }
+  .content-img img {
+    height: 216px;
+  }
+  .content-btn {
+    margin-top: 5.5rem;
+    margin-left: 0.9rem;
+    width: 350px;
+  }
+  .content-btn svg {
+    width: 20px;
+  }
+  .content-img-nav img {
+    width: 89px;
+    height: 52px;
   }
 }

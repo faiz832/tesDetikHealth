@@ -13,8 +13,8 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar fixed-top p-lg-5" id="navbar">
-      <div class="nav-menu w-100" id="nav-menu">
+    <nav class="navbar d-flex justify-content-center fixed-top p-lg-5" id="navbar">
+      <div class="nav-menu" id="nav-menu">
         <div class="nav-list d-flex justify-content-lg-between align-items-center">
           <div class="nav-logo-group d-flex justify-content-between">
             <a href="#"><img src="asset/img/navbar-brand.png" alt="" /></a>
@@ -82,8 +82,8 @@
     </nav>
 
     <!-- home -->
-    <section id="home" class="home">
-      <div class="container mx-auto">
+    <section id="home" class="home my-0">
+      <div class="container mx-auto d-flex justify-content-center">
         <div class="d-flex flex-column justify-content-center home-group">
           <img src="asset/img/logo-event 2.png" alt="" />
           <div class="button">
@@ -169,6 +169,57 @@
     </section>
 
     <!-- galeri -->
+    <section id="galeri" class="galeri">
+      <div class="container mx-auto d-flex flex-column align-items-center">
+        <h1>GALERI SUDIRMAN RUN 2022</h1>
+        <div class="galeri-content d-flex flex-column overflow-hidden">
+          <div class="content-img d-flex">
+            <img class="img-galeri" src="asset/img/galeri-1.png" alt="" />
+            <img class="img-galeri" src="asset/img/galeri-2.png" alt="" />
+            <img class="img-galeri" src="asset/img/galeri-3.png" alt="" />
+            <img class="img-galeri" src="asset/img/galeri-4.png" alt="" />
+          </div>
+          <div class="content-btn d-flex justify-content-between">
+            <div onclick="btn_slide(-1)" class="prev-btn">
+              <svg
+                width="59"
+                height="59"
+                viewBox="0 0 59 59"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M29.5 0.75L30.3043 0.761052C45.8029 1.18747 58.25 13.899 58.25 29.5C58.25 45.3412 45.37 58.25 29.5 58.25C13.6587 58.25 0.75 45.3412 0.75 29.5C0.75 13.63 13.6587 0.75 29.5 0.75ZM35.1925 18C34.33 17.1375 32.9787 17.1375 32.145 18L22.1112 27.9762C21.7087 28.3787 21.4787 28.925 21.4787 29.5C21.4787 30.075 21.7087 30.6212 22.1112 31.0237L32.145 41C32.5475 41.4312 33.0937 41.6325 33.64 41.6325C34.215 41.6325 34.7612 41.4312 35.1925 41C36.0262 40.1375 36.0262 38.7862 35.1637 37.9525L26.6825 29.5L35.1637 21.0475C36.0262 20.2137 36.0262 18.8337 35.1925 18Z"
+                  fill="white"
+                  fill-opacity="0.7"
+                />
+              </svg>
+            </div>
+            <div onclick="btn_slide(1)" class="next-btn">
+              <svg
+                width="59"
+                height="59"
+                viewBox="0 0 59 59"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M29.5 58.25L28.6957 58.239C13.1971 57.8125 0.750003 45.101 0.750001 29.5C0.75 13.6588 13.63 0.750008 29.5 0.750006C45.3412 0.750005 58.25 13.6588 58.25 29.5C58.25 45.37 45.3413 58.25 29.5 58.25ZM23.8075 41C24.67 41.8625 26.0213 41.8625 26.855 41L36.8887 31.0238C37.2912 30.6213 37.5212 30.075 37.5212 29.5C37.5212 28.925 37.2912 28.3788 36.8887 27.9763L26.855 18C26.4525 17.5688 25.9063 17.3675 25.36 17.3675C24.785 17.3675 24.2388 17.5688 23.8075 18C22.9738 18.8625 22.9737 20.2138 23.8362 21.0475L32.3175 29.5L23.8362 37.9525C22.9737 38.7863 22.9738 40.1663 23.8075 41Z"
+                  fill="white"
+                  fill-opacity="0.7"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="content-img-nav d-flex justify-content-between">
+            <span onclick="img_slide(1)"><img src="asset/img/galeri-1.png" alt="" /></span>
+            <span onclick="img_slide(2)"><img src="asset/img/galeri-2.png" alt="" /></span>
+            <span onclick="img_slide(3)"><img src="asset/img/galeri-3.png" alt="" /></span>
+            <span onclick="img_slide(4)"><img src="asset/img/galeri-4.png" alt="" /></span>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- berita -->
   </body>
