@@ -668,11 +668,18 @@ section {
 }
 
 /* mobile device */
-@media (max-width: 376px) {
+@media (max-width: 390px) {
   .about-group,
   .galeri-content {
     width: 340px;
   }
+}
+/* mobile device */
+@media (max-width: 376px) {
+  /* .about-group,
+  .galeri-content {
+    width: 340px;
+  } */
   .galeri h1 {
     font-size: 20px;
   }
