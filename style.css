@@ -668,21 +668,17 @@ section {
 }
 
 /* mobile device */
-@media (max-width: 390px) {
+@media (max-width: 395px) {
   .about-group,
   .galeri-content {
     width: 340px;
   }
-}
-/* mobile device */
-@media (max-width: 376px) {
-  /* .about-group,
-  .galeri-content {
-    width: 340px;
-  } */
   .galeri h1 {
     font-size: 20px;
   }
+}
+/* mobile device */
+@media (max-width: 376px) {
   .content-img-nav img {
     width: 80px;
     height: 48px;
