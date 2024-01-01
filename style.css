@@ -668,7 +668,7 @@ section {
 }
 
 /* mobile device */
-@media (max-width: 395px) {
+@media (max-width: 400px) {
   .about-group,
   .galeri-content {
     width: 340px;
@@ -676,9 +676,6 @@ section {
   .galeri h1 {
     font-size: 20px;
   }
-}
-/* mobile device */
-@media (max-width: 376px) {
   .content-img-nav img {
     width: 80px;
     height: 48px;
